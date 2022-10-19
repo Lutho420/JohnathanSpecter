@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+header, .intro-text, .logos, .main-images, .experience, .get-in-touch, footer {
+    padding: 2em 3.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prata', sans-serif;
+}
+p {
+    color: #aaa;
+}
+a {
+    text-decoration: none;
+}
+/*..header styling begins..*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.jspecter {
+    cursor: pointer;
+}
+.jspecter a {
+    color: inherit;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav ul a {
+    color: #ccc;
+}
+.get-in-touch-button {
+    padding: 0.6em 1em;
+    background-color: rgb(228, 228, 50);
+    max-width: fit-content;
+    cursor: pointer;
+}
+.get-in-touch-button a {
+    color: #000;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+.get-in-touch-button a:hover {
+    color: #444;
+}
+#hamburger {
+    cursor: pointer;
+}
+header nav, header p {
+    display: none;
+}
+
+/*.main section styling.*/
+/*.intro text section styling begin.*/
+.intro-text {
+    max-width: 80%;
+}
+.intro-text h1 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/*.logos section.*/
+.logos {
+    text-align: center;
+    /* margin-bottom: 3.5em; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+.logos > * {
+    margin: 1em;
+}
+#walmart, #morgan {
+    width: 5em;
+}
+#visa {
+    width: 3.3em;
+}
+#tinder, #verizon {
+    width: 4.5em;
+}
+#samsung {
+    width: 7em;
+}
+
+/*.main images section styling begin.*/
+.main-images {
+    margin-bottom: 1.5em;
+}
+.main-img {
+    max-width: 100%;
+}
+.main-image-div p {
+    font-size: 0.95em;
+}
+.main-img-links {
+    font-size: 1.5em;
+    color: inherit;
+    font-family: 'Prata', sans-serif;
+}
+.yelpcamp-img {
+    margin-top: 2em;
+}
+.spence-div p a {
+    color: inherit;
+    font-weight: 600;
+    width: -moz-fit-content;
+}
+/*.experience.*/
+.experience {
+    background-color: #999;
+}
+.experience h2 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.experience p {
+    color: #ddd;
+}
+.bold {
+    font-weight: 800;
+}
+/*.get in touch section styling.*/
+.get-in-touch {
+}
+.get-in-touch h2 {
+    font-weight: 500;
+    width: fit-content;
+}
+.social-activity {
+    margin-bottom: 1.3em;
+}
+/*.footer styling.*/
+footer {
+    background-color: #999;
+}
+footer h4 {
+    margin: 0 0 1em 0;
+}
+.socials {
+    display: flex;
+    gap: 1em;
+}
+
+/*.styling for bigger screens.*/
+@media screen and (min-width: 500px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer h4 {
+        margin: 0;
+    }
+    .social-activity {
+        max-width: 355px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .intro-text {
+        width: 50%;
+    }
+    header, .intro-text, .logos, .main-images, .experience, .get-in-touch, footer {
+        padding: 2em 5em;
+    }
+}
+@media screen and (min-width: 750px) {
+    .main-image-div p {
+        max-width: 520px;
+    }
+}
+@media screen and (min-width: 980px) {
+    .main-images, .experience {
+        display: flex;
+        gap: 3em;
+    }
+    .main-images > *, .experience > * {
+        width: 100%;
+    }
+    .experience p {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1270px) {
+    .main-image-div p {
+        width: 520px;
+    }
+}
