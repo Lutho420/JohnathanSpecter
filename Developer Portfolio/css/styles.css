@@ -167,6 +167,11 @@ footer h4 {
         max-width: 355px;
     }
 }
+@media screen and (max-width: 580px) {
+    header, .intro-text, .logos, .main-images, .experience, .get-in-touch, footer {
+        padding: 2em 1.8em;
+    }
+}
 @media screen and (min-width: 768px) {
     .intro-text {
         width: 50%;
